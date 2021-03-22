@@ -42,7 +42,7 @@ class NotSpec<T> extends Spec<T> {
   NotSpec(this._s);
 
   @override
-  bool isSatisfiedBy(candidate) {
+  bool isSatisfiedBy(T candidate) {
     return !_s.isSatisfiedBy(candidate);
   }
 }
